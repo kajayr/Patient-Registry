@@ -1,0 +1,1 @@
+export const Footer = () => <h6>This is the footer part</h6>

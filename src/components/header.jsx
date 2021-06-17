@@ -1,0 +1,1 @@
+export const Header = () => <h1>This is the website Header</h1>

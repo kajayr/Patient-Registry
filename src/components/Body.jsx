@@ -1,0 +1,1 @@
+export const Body = () => <h3>This is the body part</h3>
