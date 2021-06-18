@@ -6,7 +6,7 @@ export const Header = () => {
         <div className="container-fluid">
            <div className="row headerContainer">
             <div className="col align-self-end">
-                <Navbar  variant="light" expand="lg" className="nav">
+                <Navbar  bg="dark" expand="lg" className="nav nav-color">
                 <LinkContainer to="/">
                 <Navbar.Brand>Patient Registry</Navbar.Brand>
                 </LinkContainer>
@@ -16,14 +16,14 @@ export const Header = () => {
                 <LinkContainer to="/">
                 <Nav.Link>Home</Nav.Link>
                 </LinkContainer>
-                <LinkContainer to="/allpatients">
+                <LinkContainer to="/patientRegistry">
                 <Nav.Link>Patients List</Nav.Link>
                 </LinkContainer>
                 <LinkContainer to="/projects">
-                <Nav.Link>Projects</Nav.Link>
+                <Nav.Link>Application Details</Nav.Link>
                 </LinkContainer>
                 <LinkContainer to="/education">
-                <Nav.Link>Education</Nav.Link>
+                <Nav.Link>About us</Nav.Link>
                 </LinkContainer>
                 </Nav>
                 </Navbar.Collapse>

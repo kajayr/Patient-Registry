@@ -18,7 +18,7 @@ class PatientRegistryComponent extends Component {
     }
 
     refreshPatientRegistry() {
-        PatientDataService.retrieveAllPatients()
+        PatientDataService.getAllPatients()
         .then(
             response => {
                 this.setState({
@@ -87,8 +87,14 @@ class PatientRegistryComponent extends Component {
                        </tbody>
                    </table>
                    <div className="row">
-                       <br/>
-                       <button className="btn btn-success" onClick={this.addPatientClicked}>Add Patient</button>
+                   <div className="col-3 ">
+                       </div>
+                       <div className="col-6 text-center">
+                       <button className="btn btn-primary" onClick={this.addPatientClicked}>Add Patient</button>
+                       </div>
+                       <div className="col-3">
+                       </div>
+
                    </div>
                </div>
            </div>
