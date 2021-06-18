@@ -19,10 +19,10 @@ export const Header = () => {
                 <LinkContainer to="/patientRegistry">
                 <Nav.Link>Patients List</Nav.Link>
                 </LinkContainer>
-                <LinkContainer to="/projects">
+                <LinkContainer to="/productDetails">
                 <Nav.Link>Application Details</Nav.Link>
                 </LinkContainer>
-                <LinkContainer to="/education">
+                <LinkContainer to="/aboutus">
                 <Nav.Link>About us</Nav.Link>
                 </LinkContainer>
                 </Nav>

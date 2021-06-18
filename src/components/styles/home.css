@@ -1,0 +1,9 @@
+.bg-gradient{
+    background-image: var(--bs-gradient);
+}
+.mainCol{
+    margin-top: 20px;
+    padding: 20px;
+    color: white;
+    border-radius: 15px;
+}
