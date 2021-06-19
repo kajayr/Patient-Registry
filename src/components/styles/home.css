@@ -7,3 +7,11 @@
     color: white;
     border-radius: 15px;
 }
+
+.dataTable{
+    border-radius: 15px;
+}
+
+th, td{
+    color: white;
+}

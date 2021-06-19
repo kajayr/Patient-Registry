@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import PatientDataService from '../service/patientsDataService';
+import './styles/home.css'
 
 class PatientRegistryComponent extends Component {
     constructor(props) {
@@ -54,10 +55,10 @@ class PatientRegistryComponent extends Component {
        return(
            <div className="container">
                <h1 style={{textAlign:"center"}}>Patient Registry</h1><br/>
-               <div className="jumbotron"  style={{backgroundColor: "gray", color: "white"}}>
+               <div className="jumbotron dataTable bg-dark bg-gradient"  style={{backgroundColor: "gray", color: "white"}}>
                    <table className="table">
                        <thead>
-                           <tr style={{textAlign: "center" , color: "black"}}>
+                           <tr style={{textAlign: "center"}}>
                                <th>Id</th>
                                <th>First Name</th>
                                <th>Last Name</th>
@@ -90,7 +91,7 @@ class PatientRegistryComponent extends Component {
                    <div className="col-3 ">
                        </div>
                        <div className="col-6 text-center">
-                       <button className="btn btn-primary" onClick={this.addPatientClicked}>Add Patient</button>
+                       <button className="btn btn-secondary" onClick={this.addPatientClicked}>Add Patient</button>
                        </div>
                        <div className="col-3">
                        </div>

@@ -43,7 +43,9 @@
 .navbar-light .navbar-brand{
     color: white;
 }
-
+.active.navbar-brand:focus {
+    color: white;
+}
 
 .navbar-toggler {
     padding: .25rem .75rem;
