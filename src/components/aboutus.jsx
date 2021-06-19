@@ -7,11 +7,12 @@ export const AboutUs = () => {
 
                 </div>
                 <div className="col-6 bg-dark bg-gradient mainCol">
-                <h3>Team members</h3>
+                <h1>Team members</h1>
+                <hr />
                 <ul>
-                    <li>Alpha - https://github.com/alpha1256</li>
+                    <li>Alpha - <a href="https://github.com/alpha1256" target="_blank" rel="noreferrer">github.com/alpha1256</a></li>
                     <li>James Falk - <a href="https://github.com/james-falk" target="_blank" rel="noreferrer">github.com/james-falk</a></li>
-                    <li>Leo Sinani - https://github.com/kajayr/</li>
+                    <li>Leo Sinani - <a href="https://github.com/kajayr/" target="_blank" rel="noreferrer">github.com/kajayr/</a></li>
                 </ul>
                 </div>
                 <div className="col-3">

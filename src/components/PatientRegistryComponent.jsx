@@ -53,9 +53,9 @@ class PatientRegistryComponent extends Component {
  
    render() {
        return(
-           <div className="container">
-               <h1 style={{textAlign:"center"}}>Patient Registry</h1><br/>
+           <div className="container mt-4 patientList">
                <div className="jumbotron dataTable bg-dark bg-gradient"  style={{backgroundColor: "gray", color: "white"}}>
+               <h1 style={{textAlign:"center"}}>Patient Database</h1><br/>
                    <table className="table">
                        <thead>
                            <tr style={{textAlign: "center"}}>
@@ -91,6 +91,7 @@ class PatientRegistryComponent extends Component {
                    <div className="col-3 ">
                        </div>
                        <div className="col-6 text-center">
+                           <hr />
                        <button className="btn btn-secondary" onClick={this.addPatientClicked}>Add Patient</button>
                        </div>
                        <div className="col-3">

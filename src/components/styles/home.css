@@ -1,11 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Stint+Ultra+Condensed&family=Viaoda+Libre&display=swap');
 .bg-gradient{
     background-image: var(--bs-gradient);
+}
+@keyframes main {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
 }
 .mainCol{
     margin-top: 20px;
     padding: 20px;
     color: white;
     border-radius: 15px;
+    animation-name: main;
+    animation-duration: .7s;
+}
+.patientList{
+    animation-name: main;
+    animation-duration: .7s;
 }
 
 .dataTable{
@@ -14,4 +29,26 @@
 
 th, td{
     color: white;
+}
+
+h1, h5, li{
+    font-family: 'Viaoda Libre', cursive;
+}
+p{
+    font-family: 'Stint Ultra Condensed', cursive;
+    font-size: 32px;
+}
+h5{
+    font-size: 26px;
+}
+ li{
+    font-size: 20px;
+}
+a { color: inherit;
+    transition: .3s;
+} 
+a:hover{
+    color: white;
+    text-shadow: 0 0 3px white;
+    transition: .3s;
 }

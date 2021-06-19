@@ -1,13 +1,13 @@
 import './styles/home.css'
 export const ProductDetails = () => {
     return(
-        <div className="container">
+        <div className="container patientList">
             <div className="row">
                 <div className="col-3">
 
                 </div>
                 <div className="col-6 bg-dark bg-gradient mainCol">
-                <h3>Product Details</h3>
+                <h1>Product Details</h1>
                 <hr />
                 <h5>Technologies Used</h5>
                 <ul>
