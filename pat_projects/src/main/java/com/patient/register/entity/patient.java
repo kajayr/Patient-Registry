@@ -4,7 +4,7 @@ import javax.persistence.*;
 
 @Entity
 @Table(name="patient")
-public class Patient {
+public class patient {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id")
@@ -28,6 +28,8 @@ public class Patient {
     @Column(name = "weight")
     private String weight;
 
+    patient(){}
+
     public String getWeight() {
         return weight;
     }
@@ -36,7 +38,7 @@ public class Patient {
         this.weight = weight;
     }
 
-    public Patient(String firstName, String lastName, int age, String diagnosis, char gender, String weight) {
+    public patient(String firstName, String lastName, int age, String diagnosis, char gender, String weight) {
         this.firstName = firstName;
         this.lastName = lastName;
         this.age = age;

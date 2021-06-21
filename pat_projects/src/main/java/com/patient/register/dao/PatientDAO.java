@@ -1,12 +1,12 @@
 package com.patient.register.dao;
 
-import com.patient.register.entity.Patient;
+import com.patient.register.entity.patient;
 
 import java.util.List;
 
 public interface PatientDAO {
-    List<Patient> findAll();
-    Patient findById(int patientId);
-    void saveOrUpdate(Patient patient);
+    List<patient> findAll();
+    patient findById(int patientId);
+    void saveOrUpdate(patient patient);
     void deleteById(int patientId);
 }

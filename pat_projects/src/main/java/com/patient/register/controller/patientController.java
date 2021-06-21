@@ -1,6 +1,6 @@
 package com.patient.register.controller;
 
-import com.patient.register.entity.Patient;
+import com.patient.register.entity.patient;
 import com.patient.register.service.PatientService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
@@ -14,20 +14,20 @@ public class patientController {
     private final PatientService patientService;
 
     @Autowired
-    public patientController(@Qualifier("patientServiceIMPL")PatientService patientService){this.patientService = patientService;}
+    public patientController(@Qualifier(value= "patientServiceIMPL") PatientService patientService){this.patientService = patientService;}
 
     @GetMapping("/retrieveAllPatients")
-    public List<Patient> findAll(){
+    public List<patient> findAll(){
         return patientService.findAll();
     }
 
     @GetMapping("/retrievePatient/{patientId}")
-    public Patient getPatient(@PathVariable int patientId){
+    public patient getPatient(@PathVariable int patientId){
         return patientService.findById(patientId);
     }
 
     @PostMapping("/addPatient")
-    public Patient addPatient(@RequestBody Patient patient)
+    public patient addPatient(@RequestBody patient patient)
     {
         patient.setId(0);
         patientService.saveOrUpdate(patient);
@@ -35,7 +35,7 @@ public class patientController {
     }
 
     @PutMapping("/updatePatient")
-    public Patient updatePatient(@RequestBody Patient patient)
+    public patient updatePatient(@RequestBody patient patient)
     {
         patientService.saveOrUpdate(patient);
         return patient;

@@ -1,6 +1,6 @@
 package com.patient.register.dao;
 
-import com.patient.register.entity.Patient;
+import com.patient.register.entity.patient;
 import org.hibernate.Session;
 import org.hibernate.query.Query;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -19,24 +19,24 @@ public class PatientIMPL implements PatientDAO {
 
     @Override
     @Transactional
-    public List<Patient> findAll()
+    public List<patient> findAll()
     {
         Session currentSession = entityManager.unwrap(Session.class);
-        Query<Patient> myQuery = currentSession.createQuery("from patient");
+        Query<patient> myQuery = currentSession.createQuery("from patient");
         return myQuery.getResultList();
     }
 
     @Override
     @Transactional
-    public Patient findById(int patientId)
+    public patient findById(int patientId)
     {
         Session currentSession = entityManager.unwrap(Session.class);
-        return currentSession.get(Patient.class, patientId);
+        return currentSession.get(patient.class, patientId);
     }
 
     @Override
     @Transactional
-    public void saveOrUpdate(Patient patient)
+    public void saveOrUpdate(patient patient)
     {
         Session currentSession = entityManager.unwrap(Session.class);
         currentSession.saveOrUpdate(patient);
@@ -47,7 +47,7 @@ public class PatientIMPL implements PatientDAO {
     public void deleteById(int patientId)
     {
         Session currentSession = entityManager.unwrap(Session.class);
-        Patient patient = currentSession.get(Patient.class, patientId);
+        patient patient = currentSession.get(com.patient.register.entity.patient.class, patientId);
         currentSession.delete(patient);
     }
 }
