@@ -3,7 +3,7 @@ import axios from 'axios'
 class PatientDataService {
     
     getAllPatients() {
-        return axios.get(`http://localhost:8080/getAllPatients`);
+        return axios.get(`http://localhost:8080/retrieveAllPatients`);
     }
     
     deletePatient(id) {
